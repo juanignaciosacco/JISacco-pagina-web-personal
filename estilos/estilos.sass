@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap')
+
+//Variables
+$colorTurquesa: #00ae8b
+$colorAzul: rgb(0, 94, 255)
+
+// Animaciones
+@keyframes subir
+    0%
+        opacity: 0%
+        margin-top: 250px
+    100%
+        opacity: 100%
+        margin-top: 0px
+
+@keyframes derechaIzq 
+    0%
+        opacity: 0%
+        margin-left: 250px
+    100%
+        opacity: 100%
+        margin-left: 0px
+
+
+
+
+/* Inicio diseños genericos font y titulos */
+*
+    font-family: "Montserrat", sans-serif
+
+
+html
+    font-size: 14px
+
+
+h1
+    color: $colorAzul
+    font-weight: 700
+    text-shadow: 2px 2px 2px black
+
+
+h2
+    font-size: 2rem
+    font-weight: 500
+    text-align: center
+    color: $colorAzul
+    height: 80px
+    line-height: 80px
+    text-shadow: 2px 2px 2px black
+
+/* Fin diseños genericos font y titulos */
+
+/* Inicio diseño header, barra navegacion */
+header
+    min-height: 80px
+    width: 100%
+
+.navbar-light 
+    .navbar-nav 
+        .navLink
+            font-size: 1rem
+            font-weight: 500
+            color: $colorTurquesa
+
+.navbar-light 
+    .navbar-nav 
+        .navLink
+            &:hover
+                color: $colorAzul
+
+nav
+    min-height: 80px
+    border-bottom-left-radius: 50px
+    border-bottom-right-radius: 50px
+
+.colorMenu
+    background-color: $colorTurquesa
+    border-radius: 5px
+
+/* Fin diseño geader, barra navegacion */
+
+/* Inicio fondo pagina */
+body
+    background-image: url(img/Fondo/rays-gc701deff8_1920.jpg)
+    background-size: cover
+    background-color: black
+    background-position: top left
+    background-attachment: fixed
+
+/* Fin fondo pagina */
+
+/* Inicio portada */
+main
+    min-height: calc(90vh - 90px)
+
+.parrafoPortada
+    color: white
+    font-size: 1rem
+    text-align: center
+    text-shadow: 2px 2px 3px black
+
+.cell
+    min-height: 100px
+
+.bigCell
+    display: inline
+
+.imgDispositivos
+    animation-name: subir
+    animation-iteration-count: 1
+    animation-duration: 1.5s
+
+
+.imgCelLogo
+    animation-name: derechaIzq
+    animation-iteration-count: 1
+    animation-duration: 1.5s
+
+
+/* Fin portada */
+
+/* Inicio diseño items de lista beneficios paginas web */
+.itemList
+    font-weight: bolder
+    transition: all 0.4s
+
+.itemList
+    &:hover
+        background-color: rgba(128, 128, 128, 0.199)
+        border-radius: 20px
+
+/* Fin diseño items de lista beneficios paginas web */
+
+/* Inicio generico listas */
+ul 
+    li
+        font-size: 1rem
+        font-weight: 100
+        list-style: none
+
+/* Fin generico listas */
+
+/* Inicio diseño imagenes paginas web */
+.scalePagWebs
+    width: 280px
+    height: 200px
+    transition: all 1s
+
+.scalePagWebs
+    &:hover
+        box-shadow: 3px 1.2px 5.3px rgba(0,177,135, 0.273), 10.1px 4px 17.9px rgba(0,177,135, 0.475), 25px 10px 50px rgba(0,177,135, 0.62)
+
+/* Fin diseño imagenes paginas web */
+
+/* Iinicio diseño imagenes QR */
+.scaleQr
+    width: 70%
+    transition: all 1s
+
+.scaleQr
+    &:hover
+        box-shadow: 2.5px 1px 10px rgba(0,177,135, 0.261), 20px 8px 80px rgba(0,177,135, 0.42)
+
+/* Fin diseño imagenes QR */
+
+/* Inicio imagen Logo seccion QR */
+.scaleLogo
+    height: 250px
+    width: 250px
+
+.rounded2
+    border-radius: 15%
+
+/* Fin imagen Logo seccion QR */
+
+/* Inicio imagen y texto sobre mi */
+.scaleImgYo
+    margin-top: 20px
+    height: 300px
+
+.parrafo
+    color: black
+    font-size: 1.3rem
+    font-weight: 700
+    margin-top: 20px
+    text-align: center
+
+.parrafo
+    &::first-letter
+        font-size: 2rem
+        font-weight: bold
+        color: $colorTurquesa
+
+/* Fin imagen y texto sobre mi */
+
+/* Inicio iconos */
+.scaleIconos
+    height: 30px
+    margin-right: 10px
+
+/* Fin iconos */
+
+/* Inicio diseño secciones con fondo y sin fondo */
+.conFondo
+    background-color: white
+    min-height: 600px
+    padding-top: 20px
+    color: black
+
+.sinFondo
+    min-height: 600px
+    color: #fff
+
+/* Fin diseño secciones con fondo y sin fondo */
+
+/* Inicio diseño formulario */
+section 
+    form 
+        textarea
+            width: 250px
+            min-height: 150px
+            max-height: 150px
+
+.botonFormulario
+    margin: 10px
+    background-color: $colorTurquesa
+    border: 1px solid $colorTurquesa
+    border-radius: 5px
+    transition: box-shadow 0.5s
+    &:hover
+        box-shadow: 2px 2px 5px $colorAzul
+
+/* Fin diseño formulario */
+
+/* Inicio diseño footer */
+footer
+    color: white
+    margin-top: 20px
+    border-top-left-radius: 50px
+    border-top-right-radius: 50px    
+
+footer 
+    h2
+        color: rgb(0, 174, 139)
+
+/* Fin diseño footer */
+
+/* Inicio media queries */
+@media only screen and (max-width: 575px)
+
+    /* Inicio fondo pagina */
+    body
+        background-image: url(img/Fondo/rays-gc701deff8_1920.jpg)
+        background-size: cover
+        background-attachment: unset
+    
+    /* Fin fondo pagina */
+
+    /* h2 */
+    h2
+        font-size: 1.7rem
+        height: 60px
+        line-height: 60px
+    
+    /* Fin */
+
+    /* Inicia portada */
+    .parrafoPortada
+        color: white
+        font-size: 1.1rem
+        text-align: center
+    
+
+    .imgCelLogo
+        width: 350px
+    
+
+    .imgDispositivos
+        width: 350px
+    
+    /* Fin portada */
+    
+    /* Lista */
+    .itemList
+        margin-top: 20px
+        text-align: justify
+        font-size: 1.1rem
+        font-weight: 100
+        list-style: disc
+    
+    .subItem
+        list-style-type: circle
+    
+    /* Fin */
+
+    /* Imagenes web */
+    .scalePagWebs
+        width: 180px
+        height: 120px
+    
+    /* Fin */
+    
+    /* Imagenes QR */
+    .scaleQr
+        margin-top: 15px
+        width: 130px
+    
+    /* Fin */
+    
+    /* Imagen logo */
+    .scaleLogo
+        height: 180px
+        width: 180px
+    
+    /* Fin */
+    
+    /* Imagen sobre mi y parrafo */
+    .scaleImgYo
+        margin-top: 20px
+        height: 200px
+    
+
+    .parrafo
+        font-size: 1.1rem
+        font-weight: 100
+        margin-top: 20px
+    
+    /* Fin */
+    
+    /* Seccion con y sin fondo */
+    .sinFondo
+        padding-left: 10px
+        padding-right: 10px
+        min-height: 450px
+    
+
+    .conFondo
+        padding-left: 10px
+        padding-right: 10px
+        min-height: 450px
+    
+    /* Fin  */
+
+@media only screen and (min-width: 576px) and (max-width: 767px)
+
+    /* Inicio fondo pagina */
+    body
+        background-image: url(img/Fondo/rays-gc701deff8_1920.jpg)
+        background-size: cover
+        background-attachment: unset
+    
+    /* Fin fondo pagina */
+
+    /* h2 */
+    h2
+        font-size: 1.8rem
+        height: 60px
+        line-height: 60px
+    
+    /* Fin */
+
+    /* Inicia portada */
+    .parrafoPortada
+        color: white
+        font-size: 1.4rem
+        text-align: center
+    
+    
+    .imgCelLogo
+        width: 550px
+    
+
+    .imgDispositivos
+        width: 550px
+    
+    /* Fin portada */
+    
+    /* Listas */
+    .itemList
+        margin-top: 20px
+        list-style: disc
+        font-size: 1.4rem
+    
+
+    .subItem
+        list-style-type: circle
+    
+
+    ul 
+        li
+            margin-top: 10px
+            text-align: center
+            font-size: 1.3rem
+            font-weight: 100
+    
+    /* Fin */
+
+    /* Imagenes web */
+    .scalePagWebs
+        width: 220px
+        height: 170px
+    
+    /* Fin */
+
+    /* Imagenes QR */
+    .scaleQr
+        margin-top: 15px
+        width: 160px
+    
+    /* Fin */
+    
+    /* Iagen logo */
+    .scaleLogo
+        height: 180px
+        width: 180px
+    
+    /* Fin */
+
+    /* Imagen sobre mi y parrafo */
+    .scaleImgYo
+        margin-top: 20px
+        height: 280px
+    
+
+    .parrafo
+        font-size: 1.2rem
+        font-weight: 100
+        margin-top: 20px
+    
+    /* Fin */
+    
+    /* Seccion con y sin fondo */
+    .sinFondo
+        padding-left: 10px
+        padding-right: 10px
+        min-height: 450px
+    
+
+    .conFondo
+        padding-left: 10px
+        padding-right: 10px
+        min-height: 450px
+    
+    /* Fin */
+
+@media only screen and (min-width: 768px)
+
+    /* h2 */
+    h2
+        font-size: 2rem
+        height: 60px
+        line-height: 60px
+    
+    /* Fin */
+
+    /* Listas */
+    .itemList
+        margin-top: 0
+    
+
+    ul 
+        li
+            margin-top: 10px
+            text-align: center
+            font-size: 1.5rem
+            font-weight: 100
+    
+    /* Fin */
+
+    /* Imagenes pagina web */
+    .scalePagWebs
+        width: 260px
+        height: 210px
+    
+    /* Fin */
+
+    /* Imagenes QR */
+    .scaleQr
+        margin-top: 15px
+        width: 190px
+    
+    /* Fin */
+    
+    /* Imagen logo */
+    .scaleLogo
+        height: 180px
+        width: 180px
+    
+    /* Fin */
+    
+    /* Imagen sobre mi y parrafo */
+    .scaleImgYo
+        margin-top: 20px
+        height: 300px
+    
+
+    .parrafo
+        font-size: 1.2rem
+        font-weight: 100
+        margin-top: 20px
+    
+    /* Fin */
+    
+    /* Secciones con y sin fondo */
+    .sinFondo
+        padding-left: 10px
+        padding-right: 10px
+        min-height: 450px
+    
+
+    .conFondo
+        padding-left: 10px
+        padding-right: 10px
+        min-height: 450px
+    
+    /* Fin */
+
+@media only screen and (min-width: 992px)
+        /* Inicio portada */
+        .imgCelLogo
+            width: 350px
+        
+    
+        .imgDispositivos
+            width: 400px
+        
+        /* Fin portada */
+
+/* Fin media queries */
