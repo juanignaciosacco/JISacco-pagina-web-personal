@@ -2,14 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-@keyframes subir {
+@keyframes izquierdaDer {
   0% {
     opacity: 0%;
-    margin-top: 250px;
+    margin-right: 250px;
   }
   100% {
     opacity: 100%;
-    margin-top: 0px;
+    margin-right: 0px;
   }
 }
 @keyframes derechaIzq {
@@ -20,6 +20,14 @@
   100% {
     opacity: 100%;
     margin-left: 0px;
+  }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
   }
 }
 /* Inicio diseños genericos font y titulos */
@@ -78,7 +86,7 @@ nav {
 /* Fin diseño geader, barra navegacion */
 /* Inicio fondo pagina */
 body {
-  background-image: url(img/Fondo/rays-gc701deff8_1920.jpg);
+  background-image: url(../img/Fondo/rays-gc701deff8_1920.jpg);
   background-size: cover;
   background-color: black;
   background-position: top left;
@@ -96,6 +104,7 @@ main {
   font-size: 1rem;
   text-align: center;
   text-shadow: 2px 2px 3px black;
+  animation: aparecer 2.5s 1;
 }
 
 .cell {
@@ -107,7 +116,7 @@ main {
 }
 
 .imgDispositivos {
-  animation-name: subir;
+  animation-name: izquierdaDer;
   animation-iteration-count: 1;
   animation-duration: 1.5s;
 }
@@ -243,7 +252,7 @@ footer {
 }
 
 footer h2 {
-  color: rgb(0, 174, 139);
+  color: #00ae8b;
 }
 
 /* Fin diseño footer */
