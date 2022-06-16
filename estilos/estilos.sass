@@ -28,21 +28,25 @@ $colorAzul: rgb(0, 94, 255)
         opacity: 0%
     100%
         opacity: 100%
+// Fin animaciones
+
+// Inicio Mixins
+@mixin sizesAndMarginTop($height, $width, $marginTop)
+    height: $height
+    width: $width
+    margin-top: $marginTop
 
 /* Inicio diseños genericos font y titulos */
 *
     font-family: "Montserrat", sans-serif
 
-
 html
     font-size: 14px
-
 
 h1
     color: $colorAzul
     font-weight: 700
     text-shadow: 2px 2px 2px black
-
 
 h2
     font-size: 2rem
@@ -52,7 +56,6 @@ h2
     height: 80px
     line-height: 80px
     text-shadow: 2px 2px 2px black
-
 /* Fin diseños genericos font y titulos */
 
 /* Inicio diseño header, barra navegacion */
@@ -145,8 +148,7 @@ ul
 
 /* Inicio diseño imagenes paginas web */
 .scalePagWebs
-    width: 280px
-    height: 200px
+    @include sizesAndMarginTop(200px, 280px, 0)
     transition: all 1s
 
 .scalePagWebs
@@ -166,8 +168,7 @@ ul
 
 /* Inicio imagen Logo seccion QR */
 .scaleLogo
-    height: 250px
-    width: 250px
+    @include sizesAndMarginTop(250px, 250px, 0px)
 
 .rounded2
     border-radius: 15%
@@ -175,8 +176,7 @@ ul
 
 /* Inicio imagen y texto sobre mi */
 .scaleImgYo
-    margin-top: 20px
-    height: 300px
+    @include sizesAndMarginTop(300px, 300px, 20px)
 
 .parrafo
     color: black
@@ -290,6 +290,7 @@ footer
 
     /* Imagenes web */
     .scalePagWebs
+        @include sizesAndMarginTop(120px, 180px, 0)
         width: 180px
         height: 120px
     
@@ -297,23 +298,17 @@ footer
     
     /* Imagenes QR */
     .scaleQr
-        margin-top: 15px
-        width: 130px
-    
+        @include sizesAndMarginTop(226px, 130px, 15px)
     /* Fin */
     
     /* Imagen logo */
     .scaleLogo
-        height: 180px
-        width: 180px
-    
+        @include sizesAndMarginTop(180px, 180px, 0)
     /* Fin */
     
     /* Imagen sobre mi y parrafo */
     .scaleImgYo
-        margin-top: 20px
-        height: 200px
-    
+        @include sizesAndMarginTop(200px, 200px , 20px)
 
     .parrafo
         font-size: 1.1rem
@@ -386,30 +381,22 @@ footer
 
     /* Imagenes web */
     .scalePagWebs
-        width: 220px
-        height: 170px
-    
+        @include sizesAndMarginTop(170px, 220px, 0)
     /* Fin */
 
     /* Imagenes QR */
     .scaleQr
-        margin-top: 15px
-        width: 160px
-    
+        @include sizesAndMarginTop(279px, 160px, 15px)
     /* Fin */
     
     /* Iagen logo */
     .scaleLogo
-        height: 180px
-        width: 180px
-    
+        @include sizesAndMarginTop(180px, 180px, 0)
     /* Fin */
 
     /* Imagen sobre mi y parrafo */
     .scaleImgYo
-        margin-top: 20px
-        height: 280px
-    
+        @include sizesAndMarginTop(280px, 280px, 20px)
 
     .parrafo
         font-size: 1.2rem
@@ -463,36 +450,27 @@ footer
 
     /* Imagenes pagina web */
     .scalePagWebs
-        width: 260px
-        height: 210px
-    
+        @include sizesAndMarginTop(210px, 260px, 0)
     /* Fin */
 
     /* Imagenes QR */
     .scaleQr
-        margin-top: 15px
-        width: 190px
-    
+        @include sizesAndMarginTop(333px, 190px, 15px)
     /* Fin */
     
     /* Imagen logo */
     .scaleLogo
-        height: 180px
-        width: 180px
-    
+        @include sizesAndMarginTop(180px, 180px, 0)
     /* Fin */
     
     /* Imagen sobre mi y parrafo */
     .scaleImgYo
-        margin-top: 20px
-        height: 300px
-    
+        @include sizesAndMarginTop(300px, 300px, 20px)
 
     .parrafo
         font-size: 1.2rem
         font-weight: 100
         margin-top: 20px
-    
     /* Fin */
     
     /* Secciones con y sin fondo */
