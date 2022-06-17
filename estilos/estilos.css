@@ -150,8 +150,9 @@ ul li {
 /* Fin generico listas */
 /* Inicio diseño imagenes paginas web */
 .scalePagWebs {
-  width: 280px;
   height: 200px;
+  width: 280px;
+  margin-top: 0;
   transition: all 1s;
 }
 
@@ -175,6 +176,7 @@ ul li {
 .scaleLogo {
   height: 250px;
   width: 250px;
+  margin-top: 0px;
 }
 
 .rounded2 {
@@ -184,8 +186,9 @@ ul li {
 /* Fin imagen Logo seccion QR */
 /* Inicio imagen y texto sobre mi */
 .scaleImgYo {
-  margin-top: 20px;
   height: 300px;
+  width: 300px;
+  margin-top: 20px;
 }
 
 .parrafo {
@@ -299,26 +302,32 @@ footer h2 {
   /* Fin */
   /* Imagenes web */
   .scalePagWebs {
+    height: 120px;
+    width: 180px;
+    margin-top: 0;
     width: 180px;
     height: 120px;
   }
   /* Fin */
   /* Imagenes QR */
   .scaleQr {
-    margin-top: 15px;
+    height: 226px;
     width: 130px;
+    margin-top: 15px;
   }
   /* Fin */
   /* Imagen logo */
   .scaleLogo {
     height: 180px;
     width: 180px;
+    margin-top: 0;
   }
   /* Fin */
   /* Imagen sobre mi y parrafo */
   .scaleImgYo {
-    margin-top: 20px;
     height: 200px;
+    width: 200px;
+    margin-top: 20px;
   }
   .parrafo {
     font-size: 1.1rem;
@@ -385,26 +394,30 @@ footer h2 {
   /* Fin */
   /* Imagenes web */
   .scalePagWebs {
-    width: 220px;
     height: 170px;
+    width: 220px;
+    margin-top: 0;
   }
   /* Fin */
   /* Imagenes QR */
   .scaleQr {
-    margin-top: 15px;
+    height: 279px;
     width: 160px;
+    margin-top: 15px;
   }
   /* Fin */
   /* Iagen logo */
   .scaleLogo {
     height: 180px;
     width: 180px;
+    margin-top: 0;
   }
   /* Fin */
   /* Imagen sobre mi y parrafo */
   .scaleImgYo {
-    margin-top: 20px;
     height: 280px;
+    width: 280px;
+    margin-top: 20px;
   }
   .parrafo {
     font-size: 1.2rem;
@@ -454,26 +467,30 @@ footer h2 {
   /* Fin */
   /* Imagenes pagina web */
   .scalePagWebs {
-    width: 260px;
     height: 210px;
+    width: 260px;
+    margin-top: 0;
   }
   /* Fin */
   /* Imagenes QR */
   .scaleQr {
-    margin-top: 15px;
+    height: 333px;
     width: 190px;
+    margin-top: 15px;
   }
   /* Fin */
   /* Imagen logo */
   .scaleLogo {
     height: 180px;
     width: 180px;
+    margin-top: 0;
   }
   /* Fin */
   /* Imagen sobre mi y parrafo */
   .scaleImgYo {
-    margin-top: 20px;
     height: 300px;
+    width: 300px;
+    margin-top: 20px;
   }
   .parrafo {
     font-size: 1.2rem;
