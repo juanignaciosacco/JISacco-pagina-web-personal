@@ -91,6 +91,7 @@ body {
   background-color: black;
   background-position: top left;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 /* Fin fondo pagina */
