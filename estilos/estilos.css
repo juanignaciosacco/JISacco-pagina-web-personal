@@ -236,18 +236,51 @@ section form textarea {
   max-height: 150px;
 }
 
-.botonFormulario {
+.boton {
   margin: 10px;
   background-color: #00ae8b;
   border: 1px solid #00ae8b;
   border-radius: 5px;
   transition: box-shadow 0.5s;
+  /* Inicia boton paginas web */
+  /* Fin boton paginas web */
 }
-.botonFormulario:hover {
+.boton:hover {
   box-shadow: 2px 2px 5px rgb(0, 94, 255);
+}
+.boton--secciones {
+  width: 25%;
+  height: 30px;
 }
 
 /* Fin diseño formulario */
+.itemPagsWeb, .itemPagsWeb--2, .itemPagsWeb--1 {
+  color: #00ae8b;
+  background-color: rgba(0, 0, 0, 0.2352941176);
+  text-shadow: 1px 1px 1px #000;
+  padding: 50px;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.itemPagsWeb--1 {
+  border-right: 2px solid rgb(0, 94, 255);
+  border-top: 2px solid rgb(0, 94, 255);
+}
+.itemPagsWeb--1:first-child {
+  border-left: 2px solid rgb(0, 94, 255);
+}
+
+.itemPagsWeb--2 {
+  border-bottom: 2px solid rgb(0, 94, 255);
+  border-right: 2px solid rgb(0, 94, 255);
+}
+.itemPagsWeb--2:first-child {
+  border-left: 2px solid rgb(0, 94, 255);
+}
+
 /* Inicio diseño footer */
 footer {
   color: white;

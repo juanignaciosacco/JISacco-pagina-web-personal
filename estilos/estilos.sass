@@ -145,7 +145,6 @@ ul
         font-size: 1rem
         font-weight: 100
         list-style: none
-
 /* Fin generico listas */
 
 /* Inicio diseño imagenes paginas web */
@@ -220,7 +219,7 @@ section
             min-height: 150px
             max-height: 150px
 
-.botonFormulario
+.boton
     margin: 10px
     background-color: $colorTurquesa
     border: 1px solid $colorTurquesa
@@ -228,7 +227,41 @@ section
     transition: box-shadow 0.5s
     &:hover
         box-shadow: 2px 2px 5px $colorAzul
+    /* Inicia boton paginas web */
+    &--secciones
+        width: 25%
+        height: 30px
+    /* Fin boton paginas web */
 /* Fin diseño formulario */
+
+// Inicio diseño pagina paginasWeb
+
+.itemPagsWeb
+    color: $colorTurquesa
+    background-color: #0000003c
+    text-shadow: 1px 1px 1px #000
+    padding: 50px
+    border-top-right-radius: 2px
+    border-top-left-radius: 2px
+    border-bottom-left-radius: 2px
+    border-bottom-right-radius: 2px
+
+// Utilizo extend de clase item y le modifico el lugar de los bordes
+.itemPagsWeb--1
+    @extend .itemPagsWeb
+    border-right: 2px solid $colorAzul
+    border-top: 2px solid $colorAzul
+    &:first-child
+        border-left: 2px solid $colorAzul
+        
+
+.itemPagsWeb--2
+    @extend .itemPagsWeb
+    border-bottom: 2px solid $colorAzul
+    border-right: 2px solid $colorAzul
+    &:first-child
+        border-left: 2px solid $colorAzul
+// Fin diseño pagina paginasWeb
 
 /* Inicio diseño footer */
 footer
