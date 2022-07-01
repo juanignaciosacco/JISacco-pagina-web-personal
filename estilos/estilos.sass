@@ -234,20 +234,17 @@ section
 /* Fin diseño formulario */
 
 // Inicio diseño pagina paginasWeb
-
 .itemPagsWeb
     color: #fff
     background-color: #0000003c
     text-shadow: 1px 1px 1px #000
     padding: 50px
-    border-top-right-radius: 2px
-    border-top-left-radius: 2px
-    border-bottom-left-radius: 2px
-    border-bottom-right-radius: 2px
+    border-top-right-radius: 4px
+    border-top-left-radius: 4px
+    border-bottom-left-radius: 4px
+    border-bottom-right-radius: 4px
 
-// Utilizo extend de clase item y le modifico el lugar de los bordes
 .itemPagsWeb--1
-    @extend .itemPagsWeb
     border-right: 2px solid $colorAzul
     border-top: 2px solid $colorAzul
     &:first-child
@@ -255,7 +252,6 @@ section
         
 
 .itemPagsWeb--2
-    @extend .itemPagsWeb
     border-bottom: 2px solid $colorAzul
     border-right: 2px solid $colorAzul
     &:first-child
@@ -367,8 +363,35 @@ footer
         padding-left: 10px
         padding-right: 10px
         min-height: 450px
-    
     /* Fin  */
+    
+    // Inicio diseño pagina paginasWeb
+    .itemPagsWeb
+        color: #fff
+        background-color: #0000003c
+        text-shadow: 1px 1px 1px #000
+        padding: 50px
+        border-top-right-radius: 2px
+        border-top-left-radius: 2px
+        border-bottom-left-radius: 2px
+        border-bottom-right-radius: 2px
+
+    .itemPagsWeb--1
+        border-top: 2px solid $colorAzul
+        border-right: 2px solid $colorAzul
+        border-left: none
+        border-bottom: none
+        &:first-child
+            border-left: none
+
+    .itemPagsWeb--2
+        border-top: 2px solid $colorAzul
+        border-left: 2px solid $colorAzul
+        border-right: none
+        border-bottom: none
+        
+    // Fin diseño pagina paginasWeb
+    
 
 @media only screen and (min-width: 576px) and (max-width: 767px)
 
@@ -441,7 +464,6 @@ footer
         font-size: 1.2rem
         font-weight: 100
         margin-top: 20px
-    
     /* Fin */
     
     /* Seccion con y sin fondo */
@@ -455,8 +477,35 @@ footer
         padding-left: 10px
         padding-right: 10px
         min-height: 450px
-    
     /* Fin */
+    
+    // Inicio diseño pagina paginasWeb
+    .itemPagsWeb
+        color: #fff
+        background-color: #0000003c
+        text-shadow: 1px 1px 1px #000
+        padding: 50px
+        border-top-right-radius: 4px
+        border-top-left-radius: 4px
+        border-bottom-left-radius: 4px
+        border-bottom-right-radius: 4px
+
+    // Utilizo extend de clase item y le modifico el lugar de los bordes
+    .itemPagsWeb--1
+        border-top: 2px solid $colorAzul
+        border-right: 2px solid $colorAzul
+        border-left: none
+        border-bottom: none
+        &:first-child
+            border-left: none
+
+    .itemPagsWeb--2
+        border-top: 2px solid $colorAzul
+        border-left: 2px solid $colorAzul
+        border-right: none
+        border-bottom: none
+        
+    // Fin diseño pagina paginasWeb
 
 @media only screen and (min-width: 768px)
 
@@ -521,12 +570,10 @@ footer
         padding-right: 10px
         min-height: 450px
     
-
     .conFondo
         padding-left: 10px
         padding-right: 10px
         min-height: 450px
-    
     /* Fin */
 
 @media only screen and (min-width: 992px)
